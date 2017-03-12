@@ -1,3 +1,3 @@
-var fun=new Function("a=10","b=13","return a+b");
-var c=fun();
+var fun=new Function("a","b","return a+b");
+var c=fun(1,2);
 document.write(c);
