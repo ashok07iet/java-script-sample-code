@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>synchronous example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+            .success{
+              color: green ; 
+            }
+            .error{
+                color:red;
+            }
+        </style>
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div>
+            <lable>Add new Book</lable>
+            <form id="myForm">
+                ID:<input type="number" id="ID" name="ID"/> <br/>
+                Title<input type="text" id="name" name="Title"/> <br/>
+                Description<input type="text" id="Description" name="Description"/><br>
+                Page Count:<input type="number" id="pageCount" name="pageCount"/><br>
+                Excerpt:<input type="text" id="Excerpt:" name="Excerpt"/><br>
+                Publish Date:<input type="Date" id="PublishDate" name="PublishDate"/><br>
+                <button  type="button" onclick="Book.createBook()">save</button>
+            </form>  
+            <div id="message"></div>
+        </div>
+
+    </body>
+
+</html>

@@ -6,25 +6,33 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>asynchronous example</title>
+        <title>synchronous example</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            table, th, td {
+                border: 1px solid black;
+            }
+        </style>
         <script src="app.js"></script>
     </head>
     <body>
         <div>
             <lable>Label File content:</lable>
-            <textarea style="width: 600px;height: 100px;" id="contentId" placeholder="load content here">
-            </textarea>
+            <table id="myTable">
+                <tr>
+                    <td>Id</td>
+                    <td>First Name</td>
+                    <td>Last Name</td>
+                    <td>Avata</td>
+                </tr> 
+
+            </table>
             <div>
-                <button onclick="fileReader.loadContent()">load</button>
+                <button onclick="http.getUser()">load user</button>
             </div>
         </div>
-        
-        <div>
-            write you comments:<textarea style="width: 600px;height: 100px;"></textarea>  
-            
-        </div>
+
     </body>
 
 </html>

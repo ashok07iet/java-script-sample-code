@@ -26,7 +26,7 @@ var Xmas96 = new Date(1996, 11, 25, 9, 30, 0);
  document.write(Xmas95);
 
 document.write("<br/><br/>");
-
+document.write("<br/><br/> iso date formta (YYYY-MM-DDTHH:MM:SSZ)");
 var Xmas97 = new Date("1997-12-25T12:00:00");
 
 document.write(Xmas97);

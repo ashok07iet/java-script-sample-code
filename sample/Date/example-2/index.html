@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>comparing to date</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .hide{
+                display: none;
+            }
+            .error{
+                color: red;
+            }
+        </style>
+        <script src="app.js">
+            
+        </script>
+    </head>
+    <body>
+        <p>start date should be greater then '03/25/2017'  </p>
+        
+        start date :<input id="start-date-id" type="date"/><br/>
+        end date :<input id="end-date-id" type="date"/><br/>
+        <label id="start-date-error" ></label><br/>
+        <button onclick="dateUtil.validate()">validate</button>
+        <div>
+            <p>number of days between to dates</p>  
+            <span id="number-of-day-id"></span><br>
+            <button onclick="dateUtil.getNumbrOfDay()">Day Diffrence</button>
+        </div>
+        
+        <div>
+            <p>get tomorrow date</p>  
+            <span id="tomorrow-id"></span><br>
+            <button onclick="dateUtil.tomorrow()">tomorrow</button>
+        </div>
+    </body>
+</html>
